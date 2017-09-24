@@ -9,6 +9,21 @@
   </head>
 
   <body>
+    <div id='sidebar'>
+      <ul>
+        <li class='category'>Website</li>
+        <li><%= link_to 'Blog', root_path %></li>
+        <li>About</li>
+      </ul>
+
+      <ul>
+        <li class='category'>Social</li>
+        <li><a href='https://twitter.com/twoesplease'>Twitter</a></li>
+        <li><a href='https://github.com/twoesplease'>Github</a></li>
+        <li><a href='mailto:itisi@toneeyoung.com'>Email</a></li>
+      </ul>
+      </div>
+
     <%= yield %>
   </body>
 </html>
