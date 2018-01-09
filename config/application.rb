@@ -6,6 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# I'm hoping  this will let Heroku get to my image files
+config.serve_static_assets = true
+
 module Blog
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
