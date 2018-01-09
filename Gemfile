@@ -54,6 +54,8 @@ end
 group :production do
   # Heroku doesn't support sqlite 3
   gem 'pg'
+  # Serve static assets for Heroku
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
