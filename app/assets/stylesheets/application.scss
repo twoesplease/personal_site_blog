@@ -55,14 +55,10 @@ a:link {
 		text-align: right;
 		padding-right: 3em;
 		.category {
-			font-weight: 700;
-			font-size: 1em;
+			font-size: 1.25em;
 			text-transform: uppercase;
 			color: #fff;
 		}
-    .home_page_icon {
-      fill: #fff; 
-    }
 		li {
 			padding: .5em 0;
 			a {
@@ -73,6 +69,9 @@ a:link {
 					color: #7a818c;
 				}
 			}
+    .home_page_icon {
+      fill: #fff; 
+    }
 		}
 		.active {
 			a {
@@ -119,7 +118,7 @@ a:link {
 		padding: 1em 3em;
 		// border-bottom: 1px solid #2d2e30;
 		background: #2d2e30;
-    font-size: 1em;
+    font-size: 1.25em;
 		color: #fff;
 		text-transform: uppercase;
 		p {
@@ -152,17 +151,15 @@ a:link {
 					color: #7a818c;
 				}
 			}
-      p {
-     .date {
+    .date {
 		   color: #7a818c;
-     }  
       }
-		}
 		.date_and_author {
 			margin: .5em 0 0 0;
 			color: #7a818c;
 		}
 	}
+}
 	#post_content {
 		padding: 1em 3em;
 		.title {
@@ -229,6 +226,7 @@ a:link {
 			width: 300px;
 			float: left;
 			margin-right: 2em;
+      border-radius: 25%;
 			img {
 				width: 100%;
 				border-radius: 0.35em;
