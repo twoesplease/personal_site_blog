@@ -16,7 +16,7 @@
 
 //= depend_on_asset 'project-2x.png'
 .home_page_icon {
-  background-image:url('<%= app/assets/images/project-2x.png("project-2x.png") %> ');
+  background-image:url('<%= project-2x.png("project-2x.png") %> ');
 }
 
 @import 'normalize';
