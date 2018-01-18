@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: inherit;
 }
 
 a:link {
@@ -61,10 +61,13 @@ a:link {
 		}
 		li {
 			padding: .5em 0;
+      float: left;
 			a {
 				color: #fff;
 				text-decoration: none;
 				transition: all .4s ease;
+        display: block;
+        padding: 8px;
 				&:hover {
 					color: #7a818c;
 				}
@@ -227,7 +230,7 @@ a:link {
 			width: 300px;
 			float: left;
 			margin-right: 2em;
-      border-radius: 25%;
+      border-radius: 8px;
 			img {
 				width: 100%;
 				border-radius: 0.35em;
