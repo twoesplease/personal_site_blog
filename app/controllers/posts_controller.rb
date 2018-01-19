@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  # Recommended in the devise documentation
+  protect_from_forgery prepend: true
   before_action :authenticate_user!, except: %i[index show]
   def index
     @posts = Post.all.order('created_at DESC')
