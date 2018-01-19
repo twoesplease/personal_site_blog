@@ -38,7 +38,6 @@ a:link {
 #topnav {
 	background: #63685e;
 	padding: 0;
-	// border-right: 1px solid #2d2e30;
 	#logo {
 		width: 20px;
     padding: 8px;
@@ -76,11 +75,11 @@ a:link {
 		}
 	}
 	.sign_in {
-		position: absolute;
-		right: 3em;
-		top: 80%;
-		font-size: .8em;
-		color: #fff;
+		// position: absolute;
+		// right: 3em;
+		// top: 80%;
+		// font-size: .8em;
+		// color: #fff;
 	}
 }
 
@@ -230,16 +229,9 @@ a:link {
 		padding: 3em;
 		#profile_image {
 			width: 300px;
-			float: left;
 			margin-right: 2em;
+			max-width: 100%;
       border-radius: 0.35em;
-			img {
-				width: 100%;
-				border-radius: 25%;
-				max-width: 100%;
-        height: auto;
-        border-radius: 0.35em;
-			}
 		}
 		#content {
 			h1 {
