@@ -35,47 +35,43 @@ a:link {
   text-decoration: underline;
 }
 
-#sidebar {
-	width: 250px;
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100%;
-	background: #2d2e30;
-	padding: 7em 0 0 0;
+#topnav {
+	background: #63685e;
+	padding: 0;
 	// border-right: 1px solid #2d2e30;
 	#logo {
-		width: 40px;
-		position: absolute;
-		right: 3em;
-		top: 3em;
+		width: 20px;
+    padding: 8px;
 	}
 	ul {
+    margin: 25px 0px;
 		list-style: none;
-		text-align: right;
-		padding-right: 3em;
+		padding-right: 0;
+    overflow: hidden;
 		.category {
 			font-size: 1.25em;
 			text-transform: uppercase;
 			color: #fff;
+      float: left;
+			padding: .5em 
 		}
 		li {
 			padding: .5em 0;
+      float: left;
 			a {
 				color: #fff;
 				text-decoration: none;
 				transition: all .4s ease;
+        display: block;
+        padding: 0.5em;
 				&:hover {
-					color: #7a818c;
+					color: #2d2e30;
 				}
-			}
-    .home_page_icon {
-      fill: #fff; 
-    }
-		}
-		.active {
-			a {
-		  	color: #7a818c;
+		  .active {
+			  a {
+		  	  color: #63685e;
+			  }
+		          }
 			}
 		}
 	}
@@ -140,6 +136,16 @@ a:link {
 	.post_wrapper {
 		padding: 3em;
 		// border-bottom: 1px solid #2d2e30;
+    p {
+      color: #63685e;
+      .date {
+  		   color: #63685e;
+            }
+  		.date_and_author {
+  			margin: .5em 0 0 0;
+  			color: #63685e;
+		}
+      }
 		.title {
 			margin: 0;
 			a {
@@ -148,16 +154,9 @@ a:link {
 				color: #fff;
 				font-size: 1.5em;
 				&:hover {
-					color: #7a818c;
+					color: #63685e;
 				}
 			}
-    .date {
-		   color: #7a818c;
-      }
-		.date_and_author {
-			margin: .5em 0 0 0;
-			color: #7a818c;
-		}
 	}
 }
 	#post_content {
@@ -172,10 +171,14 @@ a:link {
 		.body {
 			font-size: 1.1em;
 			line-height: 1.75;
+      color: #fff;
 		}
 		.date_and_author {
-			color: #7a818c;
+			color: #63685e;
 			margin: .5em 0 2em 0;
+		}
+		.date {
+			color: #63685e;
 		}
 		#comments {
 			h2 {
@@ -201,14 +204,17 @@ a:link {
 						margin: 1em 0 0 0;
 						font-size: 0.7em;
 						text-transform: uppercase;
+            color: #63685e;
 					}
 					.comment_body {
 						font-size: 1.2em;
 						margin: 0.2em 0 0 0;
+            color: #fff;
 					}
 					.comment_time {
 						margin-top: 1.2em;
 						font-size: .8em;
+            color: #63685e;
 					}
 				}
 				.button {
@@ -226,10 +232,13 @@ a:link {
 			width: 300px;
 			float: left;
 			margin-right: 2em;
-      border-radius: 25%;
+      border-radius: 0.35em;
 			img {
 				width: 100%;
 				border-radius: 25%;
+				max-width: 100%;
+        height: auto;
+        border-radius: 0.35em;
 			}
 		}
 		#content {
@@ -242,7 +251,7 @@ a:link {
         color: #fff;
 			}
 			a {
-			  color: #7a818c;
+			  color: #63685e;
 				font-weight: 700;
 				text-decoration: underline;
 			}
