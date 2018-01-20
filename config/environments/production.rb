@@ -64,6 +64,25 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
+  config.action_mailer.raise_delivery_errors = true
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.perform_deliveries = true
+  # Got credentials from 
+  # https://help.1and1.com/e-mail-and-office-c37589/1and1-mail-basic-c37590/using-the-product-c85088/e-mail-software-setup-credentials-a616889.html
+  ActionMailer::Base.smtp_settings =
+{
+
+  address:        'smtp.1and1.com',
+  port:           587,
+  domain:         '1and1.com',
+  authentication: :plain,
+  user_name:      'itisi@toneeyoung.com',
+  password:       'Msa&B3UI^7h1'
+}
+  # Required for Devise to be able to send emails to users logging in.
+  config.action_mailer.default_url_options = { host: 'vast-bastion-27914.herokuapp.com' }
+  # Ignore bad email addresses and do not raise email delivery errors.
+  # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to

@@ -3,12 +3,13 @@
   <head>
     <title>Blog</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Inconsolata:400,700' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <p class='notice'><%= notice %></p>
+    <p class='alert'><%= alert %></p>
     <div id='topnav'>
       <ul>
         <li class='category'>Here</li>
