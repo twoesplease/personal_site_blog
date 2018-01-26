@@ -19,6 +19,7 @@
 html, body {
 	font-family: 'Inconsolata', monospace;
 	background: #2d2e30;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -90,10 +91,10 @@ a:link {
 	padding: .5em 1.5em;
 	border-radius: 1.5em;
 	&:hover {
-		border: 1px solid #33acb7;
-		color: #33acb7;
+		border: 1px solid #63685e;
+		color: #63685e;
 		a {
-			color: #33acb7 !important;
+			color: #63685e !important;
 		}
 	}
 }
@@ -216,9 +217,9 @@ a:link {
             color: #63685e;
 					}
 				}
-				.button {
+        .button {
 					float: right;
-				}
+        }
 			}
 			input[type="text"], textarea {
 				width: 50%;
@@ -269,14 +270,16 @@ a:link {
 	input[type="submit"] {
 		outline: none;
 		background: transparent;
-		border: 1px solid #2d2e30;
+		border: 1px solid #63685e;
 		padding: .5em 1.5em;
 		font-size: 1.1em;
+	  font-family: 'Inconsolata', monospace;
+    color: #fff;
 		border-radius: 1.5em;
 		margin-left: .5em;
 		&:hover {
-			border: 1px solid #33acb7;
-			color: #33acb7;
+			border: 1px solid #63685e;
+			color: #63685e;
 		}
 	}
 }
