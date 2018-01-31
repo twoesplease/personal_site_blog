@@ -20,4 +20,3 @@ module ApplicationHelper
     markdown.render(text).html_safe
   end
 end
-end
