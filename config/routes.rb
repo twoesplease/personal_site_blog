@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   root 'posts#index'
 
   get '/about', to: 'pages#about'
+
+  namespace :api do
+    resources :posts
+  end
 end
