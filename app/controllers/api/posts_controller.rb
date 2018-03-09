@@ -1,5 +1,4 @@
-class Api::PostsController < ApplicationController
-  skip_before_action :verify_authenticity_token
+class Api::PostsController < Api::ApiController
 
   def index
     render json: Post.all
@@ -13,14 +12,12 @@ class Api::PostsController < ApplicationController
   def create
     post = Post.new(post_params) 
     if post.save
-      render json: {
-        status: 200,
+      render status:200, json: {
         message: "You did it! Post successfully created.",
         post: post
       }.to_json
     else
-      render json: {
-        status: 500,
+      render status: 422, json: {
         message: "Hmm, that didn't work.  Try again.",
         errors: post.errors
       }.to_json
@@ -30,8 +27,7 @@ class Api::PostsController < ApplicationController
   def destroy
     post = Post.find(params[:id])
     post.destroy
-    render json: {
-      status: 200,
+    render status: 200, json: {
       message: "That post has been successfully deleted."
     }.to_json
   end
@@ -39,14 +35,12 @@ class Api::PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     if post.update(post_params)
-      render json: {
-        status: 200,
+      render status: 200, json: {
         message: "Post successfully updated.",
         post: post
       }.to_json
     else
-      render json: {
-        status: 500,
+      render status: 422, json: {
         message: "The post could not be updated.",
         post: post
       }.to_json
