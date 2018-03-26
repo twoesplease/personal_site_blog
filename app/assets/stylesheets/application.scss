@@ -230,10 +230,11 @@ a:link {
 	#page_wrapper {
 		padding: 3em;
 		#profile_image {
-			width: 300px;
+			width: 250px;
 			margin-right: 2em;
 			max-width: 100%;
       border-radius: 0.35em;
+      opacity: 0.75;
 		}
 		#content {
 			h1 {
