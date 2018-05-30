@@ -7,6 +7,8 @@ end
 
 # Set Ruby version
 # ruby '2.4.2'
+# Adding this comment so I can recompile my assets & hopefully it will work
+# to fix my CSS.
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
