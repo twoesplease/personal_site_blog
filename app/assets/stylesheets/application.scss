@@ -36,6 +36,19 @@ a:link {
   text-decoration: underline;
 }
 
+.pagination li {
+  list-style: none;
+  padding: .5em;
+  display: inline-block;
+ }
+
+ .pagination a {
+text-decoration: none;
+  &:hover {
+    color: #63685e;
+  }
+}
+
 #topnav {
   // please precompile and show properly on heroku!
 	background: #63685e;
@@ -54,7 +67,7 @@ a:link {
 			text-transform: uppercase;
 			color: #fff;
       float: left;
-			padding: .5em 
+			padding: .5em;
 		}
 		li {
 			padding: .5em 0;

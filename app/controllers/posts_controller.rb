@@ -3,7 +3,9 @@ class PostsController < ApplicationController
   protect_from_forgery prepend: true
   before_action :authenticate_user!, except: %i[index show]
   def index
-    @posts = Post.all.order('created_at DESC')
+    # @posts = Post.all.order('created_at DESC')
+    @posts = Post.paginate :page => params[:page], :per_page => 10
+
   end
 
   def new
